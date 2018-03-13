@@ -2,7 +2,9 @@
     <h3>Componente1</h3>
 <p>    
     <input type="text" placeholder="ID de la tarea">
-    <button>
+   
+    <button (click)=" cargarTareas()">     
      Consultar
     </button>
+    <li *ngFor="let uno of todos">{{uno.title}}</li>
 </p>
